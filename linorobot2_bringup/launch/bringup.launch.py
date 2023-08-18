@@ -73,7 +73,7 @@ def generate_launch_description():
             parameters=[
                 ekf_config_path
             ],
-            remappings=[("odometry/unfiltered", "odom")]
+            remappings=[("odometry/filtered", "odom")]
         ),
 
         IncludeLaunchDescription(
