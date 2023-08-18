@@ -7,7 +7,6 @@ Panels:
         - /LaserScan1
         - /LaserScan1/Topic1
         - /Image1
-        - /Image1/Status1
       Splitter Ratio: 0.5
     Tree Height: 393
 Visualization Manager:
@@ -211,7 +210,7 @@ Visualization Manager:
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /camera/image_raw
+        Value: /camera/image_raw/compressed
       Value: true
   Enabled: true
   Global Options:
