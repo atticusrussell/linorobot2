@@ -65,16 +65,16 @@ def generate_launch_description():
             description='Use Joystick'
         ),
 
-        # Node(
-        #     package='robot_localization',
-        #     executable='ekf_node',
-        #     name='ekf_filter_node',
-        #     output='screen',
-        #     parameters=[
-        #         ekf_config_path
-        #     ],
-        #     remappings=[("odometry/filtered", "odom")]
-        # ),
+        Node(
+            package='robot_localization',
+            executable='ekf_node',
+            name='ekf_filter_node',
+            output='screen',
+            parameters=[
+                ekf_config_path
+            ],
+            remappings=[("odometry/filtered", "odom")]
+        ),
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(default_robot_launch_path),
